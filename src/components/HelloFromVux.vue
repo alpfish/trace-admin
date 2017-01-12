@@ -5,18 +5,20 @@
       <h1> </h1>
     </div>
     <group title="cell demo">
-      <cell title="Vux" value="Cool" is-link></cell>
+      <cell title="Vux" value="Cool"></cell>
     </group>
+
   </div>
 </template>
 
 <script>
-import { Group, Cell } from 'vux'
+import { Group, Cell, Icon } from 'vux'
 
 export default {
   components: {
     Group,
-    Cell
+    Cell,
+    Icon
   },
   data () {
     return {
