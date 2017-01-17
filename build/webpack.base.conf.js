@@ -27,7 +27,8 @@ let webpackConfig = {
       'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      'components': path.resolve(__dirname, '../src/components'),
+      'ui': path.resolve(__dirname, '../src/ui')
     }
   },
   resolveLoader: {
@@ -87,6 +88,10 @@ module.exports = vuxLoader.merge(webpackConfig, {
     },
     {
       name: 'duplicate-style'
+    },
+    {
+      name: 'less-theme',
+      path: 'src/styles/theme.less'
     }
   ]
 })

@@ -52,9 +52,12 @@ export default {
 
 .iconfont {
   font-size: 24px;
-  color: #000;
+  color: #666;
+}
+* {
+  color: #666;
 }
 .active {
-  color: @theme-color;
+  color: @primary-color;
 }
 </style>

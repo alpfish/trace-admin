@@ -12,6 +12,8 @@ import Home from './views/Home'
 import View from './views/View'
 import My from './views/My'
 import Login from './views/Login'
+import RestPassword from './views/my/ResetPassword'
+import HandleResult from './views/common/HandleResult'
 
 const routes = [{
   path: '/',
@@ -26,8 +28,15 @@ const routes = [{
   component: My,
   meta: { auth: true },
 },{
+  path: '/my/reset_password',
+  component: RestPassword,
+  meta: { auth: true },
+},{
   path: '/login',
   component: Login
+},{
+  path: '/handle-result',
+  component: HandleResult
 },{
   path: '*',
   component: Home,
